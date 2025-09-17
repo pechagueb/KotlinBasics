@@ -1,13 +1,18 @@
 package com.ifcd61.kotlinbasics
 
-val global = 0
+import com.ifcd61.kotlinbasics.Constantes.FECHAINICIO
+import com.ifcd61.kotlinbasics.Constantes.SEPARADOR
+
+const val global = 0
+//const val  = 0
 
 fun main() {
+
     val local = 5
-    val global = 6
+    //val global = 6
     println("local: $local")
     println("Global: $global")
-    local()
+    println(FECHAINICIO) //creado en archivo "object" aparte
 }
 
 fun local(){
@@ -15,4 +20,8 @@ fun local(){
     println("Local: $local")
     println("Global: $global")
 
+}
+
+fun tema(texto: String){
+    println("\n $SEPARADOR $texto $SEPARADOR")
 }
